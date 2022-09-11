@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portafolios MH</title>
+  </head>
+  <body class="bg-slate-200">
+    <header class="shadow-xl bg-slate-200">
+      <nav
+        class="font-bold container mx-auto h-28 w-full flex text-slate-800 items-center justify-between px-10"
+      >
+        <h1 class="text-3xl font-bold">MSHP</h1>
+        <ul class="md:flex gap-5 text-xl capitalize hidden">
+          <li>
+            <a
+              class="bg-orange-600 rounded-md py-3 px-6 font-bold text-slate-200"
+              download="Maycolk-CV"
+              href="./assets/cv/CV-Maycolk.pdf"
+            >
+              descargar CV</a
+            >
+          </li>
+          <li><a href="#contacto">contacto</a></li>
+          <li>proyectos</li>
+          <li>sobre mi</li>
+        </ul>
+        <div class="md:hidden cursor-pointer hover:scale-110 transition-transform duration-200">
+          MOVIL
+        </div>
+      </nav>
+    </header>
+    <section class="relative md:h-[600px] md:grid md:place-content-center py-10">
+      <div class="bg-black/90 w-full md:h-[600px] h-full top-0 -z-10 absolute"></div>
+      <img
+        class="w-full md:h-[600px] h-full object-cover absolute top-0 -z-20"
+        src="./src/assets/imgs/technology-1283624_1920.jpg"
+        alt=""
+      />
+      <div class="container flex flex-col md:flex-row max-w-[1200px] gap-5 mx-2 items-center">
+        <div class="md:w-full w-[250px] mx-auto">
+          <img class="rounded-2xl object-cover w-full" src="./src/assets/imgs/perfil.png" alt="" />
+        </div>
+
+        <div class="px-5 flex flex-col justify-center gap-5 text-slate-200 text-left">
+          <h3 class="md:text-6xl text-4xl font-medium">Hola, soy Maycolk</h3>
+          <h4 class="md:text-4xl text-2xl">
+            desarrollador <span class="font-bold">Frontend</span>
+          </h4>
+          <p class="md:text-xl text-lg leading-10">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit necessitatibus
+            harum, laudantium consequuntur unde itaque quis aliquid exercitationem est excepturi in
+            eos cumque quia autem corrupti repellendus. Doloribus, maiores consequatur?
+          </p>
+          <div class="flex flex-col md:flex-row gap-5">
+            <a
+              href="./src/assets/cv/CV-Maycolk.pdf"
+              download="CV-MAYCOLK"
+              class="border rounded text-center bg-slate-800 text-white px-5 py-3 font-medium text-xl hover:bg-slate-200 hover:text-slate-900 transition-colors duration-300 hover:drop-shadow-md md:mr-5 hover:border-slate-900"
+            >
+              Descargar CV
+            </a>
+
+            <a
+              href="#proyectos"
+              class="text-center font-bold hover:drop-shadow-md border border-slate-900 rounded bg-slate-200 text-slate-900 py-3 px-5 text-xl hover:bg-slate-800 hover:border-slate-200 hover:text-slate-200 transition-colors duration-300 cursor-pointer"
+            >
+              Ver proyectos
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-slate-900 text-slate-200 grid md:place-content-center">
+      <div class="container max-w-[1200px] py-10 px-10">
+        <h2 class="text-4xl font-bold py-10">Acerca de mi</h2>
+        <div>
+          <p class="text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sapiente facilis ex, odio
+            voluptas earum soluta obcaecati autem eius repellendus eaque labore inventore aliquam,
+            blanditiis aliquid doloribus ut amet quis!
+          </p>
+          <div class="">
+            <h4 class="text-3xl text-left font-bold py-10">Tecnologias que manejo</h4>
+            <div class="flex justify-center items-center gap-2">
+              <div class="flex flex-col items-center">
+                <img class="w-[88px]" src="./src/assets/imgs/icons8-html-5-96.svg" alt="react" />
+                <p>HTML</p>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-1">
+                <img class="w-20" src="./src/assets/imgs/css-svgrepo-com.svg" alt="react" />
+                <p>CSS</p>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-5">
+                <img class="w-[65px]" src="./src/assets/imgs/js-svgrepo-com.svg" alt="react" />
+                <p>JAVASCRIPT</p>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-1">
+                <img class="w-20" src="./src/assets/imgs/react-svgrepo-com (1).svg" alt="react" />
+                <p>REACT</p>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-1">
+                <img class="w-20" src="./src/assets/imgs/tailwind-svgrepo-com.svg" alt="react" />
+                <p>TAILWIND</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="proyectos" class="px-5 container max-w-[1200px] mx-auto">
+      <h2 class="text-4xl font-bold my-5">Mis proyectos</h2>
+      <div class="grid grid-cols-2 gap-2 justify-center items-center">
+        <a
+          target="_blank"
+          class="rounded-xl overflow-hidden"
+          href="https://clone-flix-5804a.web.app/"
+        >
+          <img
+            class="rounded-xl hover:scale-125 transition-transform duration-300 w-full"
+            src="./src/assets/imgs/cloneflix.jpg"
+            alt=""
+          />
+        </a>
+
+        <a
+          target="_blank"
+          class="overflow-hidden rounded-xl"
+          href="https://recipes-app-mu-ochre.vercel.app/"
+          ><img
+            class="rounded-xl hover:scale-125 transition-transform duration-300 w-full"
+            src="./src/assets/imgs/recipeapp.png"
+            alt=""
+          />
+        </a>
+
+        <a
+          target="_blank"
+          class="rounded-xl overflow-hidden"
+          href="https://mystifying-ritchie-a0349f.netlify.app/"
+          ><img
+            class="rounded-xl hover:scale-125 transition-transform duration-300 w-full"
+            src="./src/assets/imgs/festival.jpg"
+            alt=""
+          />
+        </a>
+        <a
+          target="_blank"
+          class="rounded-xl overflow-hidden"
+          href="https://cigarritord.github.io/travel/"
+          ><img
+            class="rounded-xl hover:scale-125 transition-transform duration-300 w-full"
+            src="./src/assets/imgs/nutcache-image-2-600x360.jpg"
+            alt=""
+          />
+        </a>
+        <a
+          target="_blank"
+          class="rounded-xl overflow-hidden"
+          href="https://cigarritord.github.io/criptomonedas-cotizacion/"
+          ><img
+            class="hover:scale-125 transition-transform duration-300 w-full"
+            src="./src/assets/imgs/criptocotizador.jpg"
+            alt=""
+          />
+        </a>
+      </div>
+    </section>
+    <section id="contacto" class="text-center bg-slate-900 text-slate-800 mt-5">
+      <h2 class="text-4xl font-bold py-10 capitalize text-slate-200">contacto</h2>
+
+      <form
+        id="form"
+        class="flex flex-col max-w-[600px] mx-auto px-5"
+        action="https://formspree.io/f/xqkjejar"
+        method="POST"
+      >
+        <input
+          required
+          class="mb-5 p-3 rounded text-lg"
+          type="text"
+          placeholder="Nombre"
+          name=""
+          id="name"
+        />
+        <input
+          required
+          class="mb-5 p-3 rounded text-lg"
+          type="email"
+          placeholder="correo electronico"
+          name="email"
+          id=""
+        />
+        <textarea
+          required
+          class="p-3 mb-5 min-h-[200px] rounded text-lg"
+          name="message"
+          id=""
+          placeholder="Deje su mensaje y le estare respondiendo lo antes posible."
+        ></textarea>
+        <input
+          class="rounded bg-slate-200 text-slate-900 font-bold border text-xl py-3 px-6 mb-5 cursor-pointer transition-colors hover:bg-slate-800 hover:border-slate-200 hover:border hover:text-slate-200"
+          type="submit"
+          value="ENVIAR"
+        />
+        <input type="hidden" name="_next" value="//site.io/thanks.html" />
+      </form>
+    </section>
+    <footer class="text-center">
+      <div class="py-5 bg-slate-900 text-white text-xl capitalize mt-5">
+        <p>creado por Mshp - 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>
