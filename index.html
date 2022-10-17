@@ -20,7 +20,7 @@
     />
     <title>Portafolios MH</title>
   </head>
-  <body class="bg-slate-200">
+  <body class="bg-slate-200 overflow-x-hidden">
     <header class="shadow-xl bg-black fixed w-full z-20">
       <nav
         class="font-bold container mx-auto h-14 md:h-24 w-full flex text-slate-200 items-center justify-between px-10"
@@ -60,13 +60,13 @@
         class="mt-10 md:mt-0 container relative flex flex-col h-full md:flex-row w-full gap-10 items-center"
       >
         <div
-          class="md:w-[400px] perfil md:h-[400px] w-[250px] mx-auto border-[10px] rounded-full overflow-hidden"
+          class="md:w-[400px] perfil md:h-[400px] w-[250px] mx-auto border-[10px] px-8 rounded-full overflow-hidden"
         >
           <img class="rounded-2xl object-cover w-full" src="./src/assets/imgs/perfil.png" alt="" />
         </div>
 
         <div
-          class="perfil__texto md:px-5 flex flex-col justify-center gap-5 px-2 text-slate-200 text-left"
+          class="perfil__texto md:px-5 flex flex-col justify-center gap-5 text-slate-200 text-left"
         >
           <h3 class="md:text-6xl text-4xl font-medium">Hola, soy Maycolk</h3>
           <h4 class="md:text-4xl text-2xl">
@@ -80,7 +80,7 @@
             <a
               href="./src/assets/cv/CV-Maycolk.pdf"
               download="CV-MAYCOLK"
-              class="border rounded text-center bg-slate-800 text-white px-5 py-3 font-medium text-xl hover:bg-slate-200 hover:text-slate-900 transition-colors duration-300 hover:drop-shadow-md md:mr-5 hover:border-slate-900"
+              class="border rounded text-center font-bold bg-slate-800 text-white px-5 py-3 text-xl hover:bg-slate-200 hover:text-slate-900 transition-colors duration-300 hover:drop-shadow-md md:mr-5 hover:border-slate-900"
             >
               Descargar CV
             </a>
@@ -94,7 +94,7 @@
           </div>
         </div>
         <div
-          class="hidden md:block animate-pulse shadow-md absolute left-1/2 -bottom-40 z-[1000] cursor-pointer hover:scale-110 duration-200"
+          class="hidden md:block animate-bounce shadow-md absolute left-1/2 -bottom-40 z-[1000] cursor-pointer hover:scale-110 duration-200"
         >
           <a href="#proyectos">
             <img src="./src/assets/imgs/icons/icons8-flecha-ampliar-96.png" alt="" />
@@ -150,11 +150,43 @@
               </div>
               <div class="flex flex-col items-center justify-center gap-1">
                 <img
-                  class="w-[53px] max-w-[80px]"
+                  class="w-[80px] max-w-[80px]"
                   src="./src/assets/imgs/icons8-tailwind-css.svg"
                   alt="react"
                 />
                 <p>TAILWIND</p>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-1">
+                <img
+                  class="w-[80px] max-w-[80px]"
+                  src="./src/assets/imgs/icons8-node-js-96.svg"
+                  alt="react"
+                />
+                <p>NODE</p>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-1">
+                <img
+                  class="w-[80px] max-w-[80px]"
+                  src="./src/assets/imgs/icons8-express-js-100.svg"
+                  alt="react"
+                />
+                <p>EXPRESS</p>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-1">
+                <img
+                  class="w-[80px] max-w-[80px]"
+                  src="./src/assets/imgs/icons8-mongodb-96.svg"
+                  alt="react"
+                />
+                <p>MONGODB</p>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-1">
+                <img
+                  class="w-[80px] max-w-[80px]"
+                  src="./src/assets/imgs/icons8-logo-de-mysql-96.svg"
+                  alt="react"
+                />
+                <p>MySQL</p>
               </div>
             </div>
           </div>
@@ -167,6 +199,32 @@
       <div
         class="proyectos grid sm:grid-cols-2 justify-center items-center gap-2 md:gap-10 lg:grid-cols-3"
       >
+        <a
+          target="_blank"
+          class="rounded-xl overflow-hidden border-4 flex items-center justify-center"
+          href="https://restaurante-app-tpv4.vercel.app/"
+        >
+          <div class="max-w-[400px] md:max-h-[300px] rounded-xl overflow-hidden">
+            <img
+              class="rounded-xl hover:scale-125 transition-transform duration-300 h-full object-cover w-full"
+              src="./src/assets/imgs/Screenshot_1.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a
+          target="_blank"
+          class="rounded-xl overflow-hidden border-4 flex items-center justify-center"
+          href="https://melodic-halva-e16ea7.netlify.app/"
+        >
+          <div class="max-w-[400px] md:max-h-[300px] rounded-xl overflow-hidden">
+            <img
+              class="rounded-xl hover:scale-125 transition-transform duration-300 h-full object-cover w-full"
+              src="./src/assets/imgs/Screenshot_4.jpg"
+              alt=""
+            />
+          </div>
+        </a>
         <a
           target="_blank"
           class="rounded-xl overflow-hidden border-4 flex items-center justify-center"
@@ -190,6 +248,19 @@
             <img
               class="rounded-xl hover:scale-125 transition-transform duration-300 h-full object-cover w-full"
               src="./src/assets/imgs/recipes-app.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a
+          target="_blank"
+          class="rounded-xl overflow-hidden flex items-center justify-center"
+          href="https://weather-kiujo7c5q-cigarritord.vercel.app/"
+        >
+          <div class="max-w-[400px] md:max-h-[300px] rounded-xl overflow-hidden">
+            <img
+              class="rounded-xl hover:scale-125 transition-transform duration-300 h-full object-cover w-full"
+              src="./src/assets/imgs/Screenshot_2.jpg"
               alt=""
             />
           </div>
